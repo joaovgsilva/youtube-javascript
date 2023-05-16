@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- doctype = informa ao browser a versão HTML que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="João"> 
+        <meta name="description" content="Curso Web Design">
+        <meta name="keywords" content="html5, css3, javascript">
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body> <!-- JS interno = no arquivo ".html", utilizar "<script> ..conteúdo.. </script>" o final da TAG "<body>" -->
+        <h1>Aprendendo JavaScript</h1>
+        <p id="texto"></p>
+        <p>
+            <script>
+                document.write('Parágrafo escrito com o "document.write"');
+            </script>
+        </p>
+        <script src="js/index.js"></script> <!-- JS externo = no arquivo ".html", utilizar o "<script src="arquivo-externo.js"></script>"-->
+    </body>
+</html>
