@@ -50,10 +50,41 @@ function minhafuncao(){
 console.log(5 + 5); /* conteúdo de número */
 console.log('5 + 5'); /* conteúdo de texto, pois tem o "'conteúdo'" dentro dos "()" */
 
+/* IMPORTANTE = o JS é sensível a letras maiúsculas e minúsculas, sendo assim, sempre seguir a sintaxe correta nas declarações de acordo com as letras maiúsculas e minúsculas */
+
 /* no JS é utilizado as variáveis (variáveis = utilizada para armazenar valores de dados) , sendo declaradas pelas palavras "var", "let" e/ou "const" */
 var d = 1;
 var e = 5;
 var f = d + e;
 console.log(f); 
 
-/* IMPORTANTE = o JS é sensível a letras maiúsculas e minúsculas, sendo assim, sempre seguir a sintaxe correta nas declarações de acordo com as letras maiúsculas e minúsculas */
+/* formas de declarar variáveis: 
+1. var 
+2. let = dentro de cada bloco == '{}', a variável que receber 'let' não poderá ser redeclarada, somente se for usada novamente dentro de um outro '{}'
+3. const = não é possível redeclarar a variável, independente do '{}' que ela estiver, */
+
+var g=2;
+var h=3;
+var i=g+h;
+alert(i);
+
+/* SINTAXE das VARIÁVEIS
+   declaração de variáveis: */
+var j, k, l; 
+
+// atribuição dos valores:
+j = 3;
+k = 2;
+l = j - k; 
+
+alert(l);
+
+// outro exemplo:
+
+var nome, sobrenome, nomeCompleto;
+
+nome = 'João'
+sobrenome = 'Gomes'
+nomeCompleto = nome + ' ' + sobrenome;
+
+document.getElementById('nome').innerHTML = nomeCompleto;
