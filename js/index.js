@@ -52,7 +52,7 @@ console.log('5 + 5'); /* conteúdo de texto, pois tem o "'conteúdo'" dentro dos
 
 /* IMPORTANTE = o JS é sensível a letras maiúsculas e minúsculas, sendo assim, sempre seguir a sintaxe correta nas declarações de acordo com as letras maiúsculas e minúsculas */
 
-/* no JS é utilizado as variáveis (variáveis = utilizada para armazenar valores de dados) , sendo declaradas pelas palavras "var", "let" e/ou "const" */
+/* no JS é utilizado as variáveis (VARIÁVEIS = utilizada para armazenar valores de dados) , sendo declaradas pelas palavras "var", "let" e/ou "const" */
 var d = 1;
 var e = 5;
 var f = d + e;
@@ -88,3 +88,58 @@ sobrenome = 'Gomes'
 nomeCompleto = nome + ' ' + sobrenome;
 
 document.getElementById('nome').innerHTML = nomeCompleto;
+
+/* no JS os OPERADORES são usados para atribuir valores, comparar valores, executar operações aritméticas e outras coisas.
+
+sinais dos operadores: 
++ - * / = ++ -- += -= && ||
+
+os operadores são separados por 6 "categorias": */
+// 1. operadores aritméticos (matemáticos);
+var valor1, valor2, total;
+
+valor1=5;
+valor2=2;
+total=valor1+valor2; // o símbolo "+" indica que o operador é aritmético, pois está realizando uma SOMA
+
+var valor1, valor2, total;
+
+valor1 = 5;
+valor2 = 2;
+total = ++valor1; // o símbolo "++" indica que pegou o número da variável e somou +1, ou seja, "valor1 = 5" se tornou "valor1 = 6"; o símbolo "--", indica que pegou o número da variável e subtraiu -1, ou seja, "valor1 = 5" se tornou "valor1 = 4"
+
+alert(total);
+alert('O valor1 ficou: ' + valor1); // o símbolo "+" nesse caso, indica que a fórmula está juntando duas variáveis
+
+// sinais dos operadores aritméticos: + - * / ++ --
+
+
+// 2. operadores de atribuição;
+var valor1, valor2, total;
+
+valor1=5;
+valor2=2;
+total=valor1+valor2; // o símbolo "=" é um operador é de atribuição, pois indica que o "total" é IGUAL a soma do "valor1" com o "valor2"
+
+var valor1, valor2, total;
+
+valor1 = 5;
+valor2 = 2;
+valor1 += valor2; // o símbolo "+=" é um operador é de atribuição, pois indica que o "valor1 = valor1 + valor2;"; funciona com outros sinais, um exemplo é o "-=", "valor1 -= valor2;", ao invés de uso "valor1 = valor1 - valor2;"
+
+// sinais dos operadores de atribuição: = += -= *= /=
+
+// 3. operadores de sequência; 
+
+var valor3, valor4, nome;
+
+valor3 = 'João ';
+valor4 = 'Gomes';
+nome = valor3 + valor4; // o símbolo "+" nesse caso, indica que a fórmula está juntando duas variáveis; operador de sequência é usado sempre quando a variável usa LETRA ao invés de números 
+
+alert(nome);
+
+// 4. operadores de comparação;
+// 5. operador condicional (ternário);
+// 6. operadores lógicos; 
+
