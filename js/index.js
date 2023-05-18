@@ -89,7 +89,9 @@ nomeCompleto = nome + ' ' + sobrenome;
 
 document.getElementById('nome').innerHTML = nomeCompleto;
 
-/* no JS os OPERADORES são usados para atribuir valores, comparar valores, executar operações aritméticas e outras coisas.
+/* OPERADORES:
+
+no JS os OPERADORES são usados para atribuir valores, comparar valores, executar operações aritméticas e outras coisas.
 
 sinais dos operadores: 
 + - * / = ++ -- += -= && ||
@@ -120,6 +122,8 @@ var valor1, valor2, total;
 valor1=5;
 valor2=2;
 total=valor1+valor2; // o símbolo "=" é um operador é de atribuição, pois indica que o "total" é IGUAL a soma do "valor1" com o "valor2"
+
+//
 
 var valor1, valor2, total;
 
@@ -196,3 +200,38 @@ resultado = !(idade === 62); // se idade ("(idade)") não ("!") for igual ("==="
 alert(resultado);
 
 // sinais dos operadores lógicos: && || !
+
+/* FUNÇÕES:
+
+1. uma FUNÇÃO JavaScript é um bloco de código projetado para executar uma tarefa específica;
+2. é como uma pequena "fábrica" onde você faz uma entrada e ele te dá uma saída;
+3. pode ser encarado como "mini-programas" projetados para fazer uma tarefa que vai contribuir para todo código;
+4. uma função JS é executada quando "algo" a invoca (chama-a). */
+
+// fórmula da função (SINTAXE):
+// FUNÇÃO DE SOMA 
+function soma(valor1,valor2) { // "function" = entrada
+    return valor1 + valor2; // "return" = saída 
+} // "{}" = bloco de códigos
+
+/* function nome.função(valores.entrada){
+    return valor.entrada + valor.entrada; 
+} */ 
+
+var total = soma(10,23); // =("invoca")nome.função(valor.desejado, valor.desejado);"
+
+alert(total);
+
+// 
+
+// FUNÇÃO COTAÇÃO DO DÓLAR
+function realParaDolar(real, cotaçãoDolar) {
+    return real * cotaçãoDolar;
+}
+
+var valorReal = 7.89;
+var cotação = 4.97;
+
+var total = realParaDolar(valorReal, cotação);
+
+alert('O valor em real é R$: ' + valorReal + ', o valor em dólar U$ é: ' + total);
