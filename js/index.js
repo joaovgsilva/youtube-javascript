@@ -229,9 +229,24 @@ function realParaDolar(real, cotaçãoDolar) {
     return real * cotaçãoDolar;
 }
 
-var valorReal = 7.89;
+var valorReal = 10;
 var cotação = 4.97;
 
 var total = realParaDolar(valorReal, cotação);
 
 alert('O valor em real é R$: ' + valorReal + ', o valor em dólar U$ é: ' + total);
+
+// 
+
+function alertHello(){
+    alert('Hello, word!');
+}
+
+// FUNÇÃO DE FAHRENHEIT P/ CELSIUS
+function paraCelsius(valorFahrenheit){
+    return (5/9) * (valorFahrenheit - 32);
+}
+
+var x = paraCelsius(77);
+
+alert('A temperatura é de ' + x + ' graus celsius');
