@@ -23,9 +23,10 @@ alert('Olá, mundo!');
 console.log('Isso é um "console.log"');
 /* console.log('conteúdo') = essa informação aparece na área de desenvolvimento do browser */
 
+//
 
-
-/* SINTAXE = maneira que temos que digitar as nossas regras e nossos comandos */
+/* SINTAXE:
+maneira que temos que digitar as nossas regras e nossos comandos */
 
 console.log(5 + 5); /* conteúdo de número */
 console.log('5 + 5'); /* conteúdo de texto, pois tem o "'conteúdo'" dentro dos "()" */
