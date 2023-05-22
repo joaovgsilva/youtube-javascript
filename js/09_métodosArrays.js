@@ -35,3 +35,29 @@ numeros.sort(function(a, b) {return b - a});
 numeros.reverse();
 
 console.log(numeros);
+
+// pegando o MAIOR número do array:
+
+function MaiorNumero(array){
+    return Math.max.apply(null, array);
+}
+
+console.log(MaiorNumero(numeros));
+
+// pegando o MENOR número do array:
+
+function MenorNumero(array){
+    return Math.min.apply(null, array);
+}
+
+console.log(MenorNumero(numeros));
+
+// filtragem de números:
+
+const maior20 = numeros.filter(filtragem);
+
+function filtragem(value, index, array){
+    return value > 20;
+}
+
+console.log(maior20);
