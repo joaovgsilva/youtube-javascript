@@ -1,5 +1,4 @@
  /* IF e ELSE:
-
  if: SE isso acontecer, vai acontecer aquilo;
  else: SE NÃO acontecer isso, vai acontecer aquilo */
 
