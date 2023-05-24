@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="João"> 
+        <meta name="description" content="Curso JavaScript">
+        <meta name="keywords" content="html5, css3, javascript">
+        <style>
+            body{
+                text-align: center;
+            }
+
+            button{
+                width: 150px;
+                height: 70px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                color: white;
+            }
+
+            .start{
+                background: blueviolet;
+            }
+
+            .start:hover{
+                background: rebeccapurple;
+            }
+
+            .stop{
+                background: red;
+            }
+
+            .stop:hover{
+                background: orangered;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aprendendo JavaScript</h1>
+        <h2>SetTimeout e SetInterval JavaScript</h2>
+        <br>
+        <h1>Controle de Tempo</h1>
+        <h2 id="tempo">0</h2>
+        <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+        <button onclick="pararContagem()" class="stop">Parar Contagem</button>
+
+        <script src="js/13_setTimeoutSetInterval.js"></script>  
+    </body>
+</html>
