@@ -68,3 +68,24 @@ function addZero(x) {return x<10 ? '0' + x : '' + x}
 
 let dataPadraoBR = addZero(diaMes) + "/" + addZero(mes) + "/" + ano;
 console.log(dataPadraoBR);
+
+// 11. COMPARAR DATAS - Maior ou Menor: 
+var hoje = new Date();
+var vencimento = new Date(2024, 4, 25); // new Date(ano, mês, dia) | IMPORTANTE: "mês" começa em 0 (Janeiro) e termina em 11 (Dezembro)
+
+if(hoje > vencimento){
+    console.log("Sua conta está vencida!");
+} else {
+    console.log("Sua conta ainda não venceu!");
+}
+
+// 12. DIFERENÇA ENTRE DUAS DATAS EM DIAS:
+var dataInicial = new Date();
+var dataFinal = new Date(2023, 11, 31);
+
+var diferencaTempo = dataFinal.getTime() - dataInicial.getTime();
+
+var diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000));
+
+console.log("Faltam " + diferencaDias + " dias para o final do ano!");
+
