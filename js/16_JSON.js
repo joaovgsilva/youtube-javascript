@@ -50,5 +50,14 @@ function buscarCEP(){
 
     ajax.onload = function(){
         document.getElementById('texto').innerHTML = this.responseText;
+        // TEXTO -> OBJETO:
+        let obj = JSON.parse(this.responseText);
+        // VALORES DO OBJETO: 
+        let logradouro = obj.logradouro;
+        let bairro = obj.bairro;
+        let cidade = obj.localidade;
+        let estado = obj.uf;
+
+        document.getElementById('texto').innerHTML = 'Logradouro: ' + logradouro + '<br> Bairro: ' + bairro + '<br> Cidade: ' + cidade + '<br> Estado: ' + estado;
     }
 }
