@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="João"> 
+        <meta name="description" content="Curso JavaScript">
+        <meta name="keywords" content="html5, css3, javascript">
+        <title>Lista de Tarefas</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="docs/fontawesome-free-6.4.0-web/css/all.min.css"> <!-- usando os ícones dentro do HTML: <i class="fa-brands fa-nomeIcone"></i> -->
+    </head>
+    <body>
+        <h1>Lista de Tarefas</h1>
+        <header>
+            <input id="inputTarefa" type="text" placeholder="Digite sua tarefa">
+            <button class="add">Adicionar</button>
+        </header>
+        <main id="areaLista">
+            <div class="item">
+                <div class="item-icone">
+                    <i class="fa-sharp fa-regular fa-circle"></i>
+                </div>
+                <div class="item-nome">
+                    <p>Teste de Tarefa</p>
+                </div>
+                <div class="item-botao">
+                    <button class="delete"><i class="fa-sharp fa-solid fa-trash"></i> Remover</button>
+                </div>
+            </div>
+            <div class="item click">
+                <div class="item-icone">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </div>
+                <div class="item-nome">
+                    <p>Teste de Tarefa</p>
+                </div>
+                <div class="item-botao">
+                    <button class="delete"><i class="fa-sharp fa-solid fa-trash"></i> Remover</button>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/control.js"></script>
+    </body>
+</html>
