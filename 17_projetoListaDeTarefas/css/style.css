@@ -62,6 +62,7 @@ main{
     width: 100%;
     box-shadow: 0 0 20px #ccc;
     margin-bottom: 1%;
+    cursor: pointer;
 }
 
 .item.click{
@@ -96,8 +97,10 @@ main{
     padding: 10px;
     height: 80px;
     width: 100%;
+    cursor: pointer;
 }
 
 .fa-circle-check{
     color: green;
+    text-transform: solid;
 }
